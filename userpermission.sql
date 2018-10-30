@@ -46,9 +46,9 @@ INSERT INTO `acticle` VALUES ('8', '1', '2', '你好啊啊啊 啊啊！！！！
 INSERT INTO `acticle` VALUES ('9', '1', '2', '你好啊啊啊 啊啊！！！！！！', '2018-10-25 14:02:05', '2018-10-25 14:02:07', '1');
 INSERT INTO `acticle` VALUES ('10', '1', '2', '你好啊啊啊 啊啊！！！！！！', '2018-10-25 15:11:10', null, '1');
 INSERT INTO `acticle` VALUES ('11', '1', '2', '你好啊啊啊 啊啊！！！！！！', '2018-10-25 15:17:24', null, '1');
-INSERT INTO `acticle` VALUES ('12', '1', '2', '您好，面试官，非常感谢您给我这次机会', '2018-10-25 15:17:24', null, '1');
-INSERT INTO `acticle` VALUES ('13', '2', '1', '如果有幸进入贵公司，我会努力工作，为公司创造尽可能多的价值', '2018-10-25 15:25:34', null, '1');
-INSERT INTO `acticle` VALUES ('14', '2', '1', '我所居住的地方离贵公司只有半小时的距离', '2018-10-25 15:25:34', null, '1');
+INSERT INTO `acticle` VALUES ('12', '1', '2', 'dfdfdfdf', '2018-10-25 15:17:24', null, '1');
+INSERT INTO `acticle` VALUES ('13', '2', '1', 'dfdfdfdfdfdf', '2018-10-25 15:25:34', null, '1');
+INSERT INTO `acticle` VALUES ('14', '2', '1', '343sfdfd', '2018-10-25 15:25:34', null, '1');
 INSERT INTO `acticle` VALUES ('15', '2', '1', '管理员发布的文章12', '2018-10-25 15:25:34', null, '1');
 INSERT INTO `acticle` VALUES ('16', '2', '1', '管理员发布的文章123', '2018-10-25 15:25:34', null, '1');
 INSERT INTO `acticle` VALUES ('17', '2', '1', '管理员发布的文章1234', '2018-10-25 15:25:34', null, '1');
