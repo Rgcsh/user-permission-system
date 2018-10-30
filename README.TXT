@@ -19,10 +19,10 @@
 启动（部署）服务方式：
     1.mysql文件位置：在项目根目录的
     2.在ups.config.py 文件中 修改MYSQL_PASSWORD变量（输入你的数据库密码）
-    3.（请多担待，因为开发是使用的windows系统，如果您的是非windows系统，此方式也很方便）通过 Pycharm 工具打开此项目，使用此项目内置的虚拟环境，然后通过通过Pycharm终端 输入 python manage.py 命令运行脚本从而启动服务。
+    3.通过 Pycharm 工具打开此项目，使用此项目内置的虚拟环境，然后通过通过Pycharm终端 输入 python manage.py 命令运行脚本从而启动服务。
 
 测试：
-    我把postman接口测试的所有接口导出到了项目根目录的postman.json文件中，您直接导入到postman中即可测试。
+    postman接口测试的所有接口导出到了项目根目录的postman.json文件中，直接导入到postman中即可测试。
 
 接口文档：
 
