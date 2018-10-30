@@ -1,0 +1,262 @@
+{
+	"info": {
+		"_postman_id": "06191d45-3102-4747-90c2-69308becbdbc",
+		"name": "UserPermissionSystem",
+		"description": "用户权限验证系统 相关 接口测试",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "{{http}}/public/account",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "mobile",
+							"value": "17621032217",
+							"type": "text"
+						},
+						{
+							"key": "role_type",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{http}}/public/account",
+					"host": [
+						"{{http}}"
+					],
+					"path": [
+						"public",
+						"account"
+					]
+				},
+				"description": "所有用户注册接口\r\n\t参数：\r\n\tpassword str 必传\r\n\tmobile str 必传\r\n\trole_type int 必传"
+			},
+			"response": []
+		},
+		{
+			"name": "{{http}}/user/acticle",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "token",
+							"value": "536aa1b4adf6281d8a53251d6fcc91e6",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "您好，面试官",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{http}}/user/acticle",
+					"host": [
+						"{{http}}"
+					],
+					"path": [
+						"user",
+						"acticle"
+					]
+				},
+				"description": "普通用户新增文章\r\n\t参数：\r\n\tcontent str 必传 文章内容"
+			},
+			"response": []
+		},
+		{
+			"name": "{{http}}/public/account/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{http}}/public/account?password=123456&mobile=17621032218",
+					"host": [
+						"{{http}}"
+					],
+					"path": [
+						"public",
+						"account"
+					],
+					"query": [
+						{
+							"key": "password",
+							"value": "123456"
+						},
+						{
+							"key": "mobile",
+							"value": "17621032218"
+						}
+					]
+				},
+				"description": "所有用户登录接口\r\n\t参数：\r\n\tpassword str 必传\r\n\tmobile str 必传"
+			},
+			"response": []
+		},
+		{
+			"name": "{{http}}/user/acticle",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "token",
+							"value": "38f5275ca019a6d59d98e6cf5b431de1",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "你好！啊啊啊 啊啊！！！！！！",
+							"type": "text"
+						},
+						{
+							"key": "acticle_id",
+							"value": "11",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{http}}/user/acticle",
+					"host": [
+						"{{http}}"
+					],
+					"path": [
+						"user",
+						"acticle"
+					]
+				},
+				"description": "普通用户新增文章\r\n\t参数：\r\n\tcontent str 必传 文章内容"
+			},
+			"response": []
+		},
+		{
+			"name": "{{http}}/public/acticle",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "token",
+							"value": "90ed900351a0ea5d397214ca36f34aaf",
+							"type": "text"
+						},
+						{
+							"key": "acticle_id",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{http}}/public/acticle",
+					"host": [
+						"{{http}}"
+					],
+					"path": [
+						"public",
+						"acticle"
+					]
+				},
+				"description": "所有用户删除文章（管理员可以删除所有用户的未被删除的文章，普通用户只能删除自己的未被删除的文章）\r\n\t参数：\r\n\tacticle_id int 必传"
+			},
+			"response": []
+		},
+		{
+			"name": "{{http}}/user/acticle",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "token",
+							"value": "90ed900351a0ea5d397214ca36f34aaf",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "管理员发布的文章12345",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{http}}/admin/acticle",
+					"host": [
+						"{{http}}"
+					],
+					"path": [
+						"admin",
+						"acticle"
+					]
+				},
+				"description": "普通用户新增文章\r\n\t参数：\r\n\tcontent str 必传 文章内容"
+			},
+			"response": []
+		},
+		{
+			"name": "{{http}}/admin/acticle",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "token",
+							"value": "90ed900351a0ea5d397214ca36f34aaf",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "管理员发布的文章123453",
+							"type": "text"
+						},
+						{
+							"key": "acticle_id",
+							"value": "18",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{http}}/admin/acticle",
+					"host": [
+						"{{http}}"
+					],
+					"path": [
+						"admin",
+						"acticle"
+					]
+				},
+				"description": "管理员更新文章\r\n    参数：\r\n    content str 必传 文章内容\r\n    acticle_id int 必传 文章id"
+			},
+			"response": []
+		}
+	]
+}
