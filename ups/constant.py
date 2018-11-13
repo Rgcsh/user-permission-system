@@ -11,6 +11,7 @@ PASSWD_ERR = 1009
 TOKEN_EXPIRE = 1010
 DB_COMMIT_ERR = 1011
 REQUEST_GET_VAL_fAIL = 1012
+EXCEPTION = 1013
 ERR_MSG = {
 	1000: 'success',
 	1001: '此文章不存在或已删除！',
@@ -25,6 +26,7 @@ ERR_MSG = {
 	1010: 'token过期!',
 	1011: 'db commit transaction error!',
 	1012: '数据类型取值失败!',
+	1013: '异常!'
 }
 
 ROLE_TYPE = {

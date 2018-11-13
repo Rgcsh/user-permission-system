@@ -60,7 +60,7 @@ def try_check_request_data(request_data, *lists):
 			if item[2] == 1:
 				if request_data.get(item[0]) == 'null' or request_data.get(item[0]) is None or request_data.get(
 						item[0]) == '':
-					return resq_wrapper(cs.REQUEST_VALUE_ERR, request_data + '缺少必传值！==^~~^==')
+					return resq_wrapper(cs.REQUEST_GET_VAL_fAIL, request_data + '缺少必传值！==^~~^==')
 			value = request_data.get(item[0], '')
 			key = item[0]
 			type = item[1]
@@ -82,10 +82,10 @@ def try_check_request_data(request_data, *lists):
 		return dic
 	except TypeError as e:
 		logger.error(e)
-		return resq_wrapper(cs.REQUEST_TYPE_ERR, request_data)
+		return resq_wrapper(cs.REQUEST_GET_VAL_fAIL, request_data)
 	except ValueError as  e:
 		logger.error(e)
-		return resq_wrapper(cs.REQUEST_VALUE_ERR, request_data)
+		return resq_wrapper(cs.REQUEST_GET_VAL_fAIL, request_data)
 	except Exception as e:
 		logger.warning(e)
 		return jsonify({'code': cs.EXCEPTION, 'errmsg': 'unexpected error : s%' % e, 'data': request_data})
