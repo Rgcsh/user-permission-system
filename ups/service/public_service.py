@@ -8,7 +8,7 @@ import time
 from flask import request, jsonify
 
 from ups import constant as cs
-from ups.info import logger
+from ups.log_middleware import logger
 
 
 def request_data():

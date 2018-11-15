@@ -7,7 +7,7 @@ from flask import request
 
 from ups import constant as cs
 from ups import redis_store
-from ups.info import logger
+from ups.log_middleware import logger
 from ups.service.public_service import request_data, resq_wrapper as rw
 
 

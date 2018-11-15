@@ -1,7 +1,7 @@
 from sqlalchemy import and_, update, delete, select, func, or_
 from sqlalchemy.exc import SQLAlchemyError
 
-from ups.info import logger
+from ups.log_middleware import logger
 from ups.service.public_service import list_to_str
 
 __version__ = '0.1'
